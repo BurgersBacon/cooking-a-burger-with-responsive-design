@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Bobsburger'; /*a name to be used later*/
+    src: url('../fonts/Bobsburgers.ttf'); /*URL to font*/
+}
+
+body {
+    background-color: lightblue;
+}
+
+.burger{
+  margin-top: 15%;
+}
+
+.burger .ingredient {
+    width: 16.55555%;
+    float: left;
+    min-width: 176px;
+    height: 52px;
+    position: relative;
+}
+.burger .ingredient img {
+    width: 100%;
+}
+
+.burger .pan{
+  z-index: 6;
+}
+.burger .lechuga{
+  z-index: 5;
+}
+.burger .carne{
+  z-index: 3;
+}
+.burger .queso{
+  z-index: 4;
+}
+.burger .tomates{
+  z-index: 2;
+}
+.burger .pan2{
+  z-index: 1;
+}
+
+
+@media (max-width: 1080px) {
+  .burger .ingredient {
+      width: 33.333333%;
+      float: left;
+      /* min-width: 176px; */
+  }
+}
+@media (max-width: 800px){
+  .burger .ingredient {
+      width: 33.333333%;
+      float: left;
+      /* min-width: 176px; */
+  }
+}
+@media (max-width: 700px){
+  .burger .ingredient {
+      width: 50%;
+      float: left;
+      /* min-width: 176px; */
+  }
+}
+@media (max-width: 400px){
+  .burger .ingredient {
+      width: 100%;
+      float: left;
+      /* min-width: 176px; */
+  }
+  .burger .carne{
+    margin-top: -22px;
+  }
+  .burger .tomates{
+    margin-top: -18px;
+  }
+  .burger .pan2{
+    margin-top: -47px;
+  }
+}
+
+footer{
+  font-family: 'Bobsburger';
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 25px;
+  color: #0000003d;
+}
+h2, h1{
+  font-family: 'Bobsburger';
+  text-align: center;
+  margin:0;
+  color: #000000b8;
+}
+h1{
+  font-size: 40px;
+}
+
+*{
+  -webkit-transition: width 1s, height 1s; /* Safari */
+  transition: width 1s, height 1s;
+}
